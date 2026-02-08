@@ -5,8 +5,11 @@
     "eslint": "^8.25.0",
     "react": "16.14.0"
   },
+  "overrides": {
+    "tar": "^7.5.7"
+  },
   "scripts": {
-    "postinstall": "wix sync-types",
+    "postinstall": "node scripts/postinstall.cjs",
     "dev": "wix dev",
     "lint": "eslint ."
   }
